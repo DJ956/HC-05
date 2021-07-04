@@ -11,17 +11,20 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
+$C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
 reset_vec CODE 0 0 0 2 2
-end_init CODE 0 2 2 2 2
+end_init CODE 0 30 30 2 2
 config CONFIG 4 8007 8007 2 2
 $dist/default/production\HC-05.X.production.o
-cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 7DD 7DD A 2
-text2 CODE 0 7CC 7CC 4 2
-text3 CODE 0 7E7 7E7 16 2
-text4 CODE 0 7D6 7D6 7 2
-maintext CODE 0 7D0 7D0 6 2
+cinit CODE 0 32 32 4 2
+text1 CODE 0 68 68 A 2
+text2 CODE 0 82 82 4 2
+text3 CODE 0 52 52 16 2
+text4 CODE 0 7B 7B 7 2
+text6 CODE 0 72 72 9 2
+maintext CODE 0 36 36 1C 2
+cstackCOMMON COMMON 1 70 70 1 1
+intentry CODE 0 4 4 2C 2
 config CONFIG 4 8007 8007 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -39,10 +42,10 @@ BANK1 A0-EF 1
 BANK2 120-16F 1
 BANK3 1A0-1EF 1
 BANK4 220-24F 1
-CONST 4-7CB 2
-CONST 800-FFF 2
-ENTRY 4-7CB 2
-ENTRY 800-FFF 2
+CONST 2-3 2
+CONST 86-FFF 2
+ENTRY 2-3 2
+ENTRY 86-FFF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
 SFR11 580-5EF 1
@@ -67,8 +70,8 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2000-216F 1
-CODE 4-7CB 2
-CODE 800-FFF 2
+CODE 2-3 2
+CODE 86-FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -80,12 +83,12 @@ SFR7 380-3EF 1
 SFR8 400-46F 1
 SFR9 480-4EF 1
 BIGRAM 2000-216F 1
-COMMON 70-7D 1
+COMMON 71-7D 1
 EEDATA F000-F0FF 2
-STRCODE 4-7CB 2
-STRCODE 800-FFF 2
-STRING 4-7CB 2
-STRING 800-FFF 2
+STRCODE 2-3 2
+STRCODE 86-FFF 2
+STRING 2-3 2
+STRING 86-FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -100,41 +103,71 @@ STRING 800-FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\HC-05.X.production.o
-7FD cinit CODE >1419:C:\Users\dexte\AppData\Local\Temp\xcAs1i4.s
-7FD cinit CODE >1422:C:\Users\dexte\AppData\Local\Temp\xcAs1i4.s
-7FD cinit CODE >1428:C:\Users\dexte\AppData\Local\Temp\xcAs1i4.s
-7FD cinit CODE >1430:C:\Users\dexte\AppData\Local\Temp\xcAs1i4.s
-7FE cinit CODE >1431:C:\Users\dexte\AppData\Local\Temp\xcAs1i4.s
-7D6 text4 CODE >58:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7D6 text4 CODE >61:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7D9 text4 CODE >63:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7DA text4 CODE >65:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7DC text4 CODE >66:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7E7 text3 CODE >55:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7E7 text3 CODE >60:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7E9 text3 CODE >61:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7EA text3 CODE >66:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7ED text3 CODE >67:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7EF text3 CODE >72:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7F2 text3 CODE >73:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7F4 text3 CODE >78:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7F6 text3 CODE >79:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7F7 text3 CODE >80:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7F9 text3 CODE >86:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7FB text3 CODE >87:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7FC text3 CODE >94:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/pin_manager.c
-7CC text2 CODE >68:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7CC text2 CODE >71:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7CF text2 CODE >72:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7DD text1 CODE >50:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7DD text1 CODE >53:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7E0 text1 CODE >54:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7E3 text1 CODE >55:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7E6 text1 CODE >56:C:\Users\dexte\MPLABXProjects\HC-05.X\mcc_generated_files/mcc.c
-7D0 maintext CODE >5:C:\Users\dexte\MPLABXProjects\HC-05.X\main.c
-7D0 maintext CODE >7:C:\Users\dexte\MPLABXProjects\HC-05.X\main.c
-7D3 maintext CODE >10:C:\Users\dexte\MPLABXProjects\HC-05.X\main.c
-7D3 maintext CODE >13:C:\Users\dexte\MPLABXProjects\HC-05.X\main.c
+32 cinit CODE >1447:C:\Users\dexte\AppData\Local\Temp\xcAs1e0.s
+32 cinit CODE >1450:C:\Users\dexte\AppData\Local\Temp\xcAs1e0.s
+32 cinit CODE >1456:C:\Users\dexte\AppData\Local\Temp\xcAs1e0.s
+32 cinit CODE >1458:C:\Users\dexte\AppData\Local\Temp\xcAs1e0.s
+33 cinit CODE >1459:C:\Users\dexte\AppData\Local\Temp\xcAs1e0.s
+34 cinit CODE >1460:C:\Users\dexte\AppData\Local\Temp\xcAs1e0.s
+4 intentry CODE >55:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+6 intentry CODE >56:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+B intentry CODE >58:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+C intentry CODE >60:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+15 intentry CODE >61:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+16 intentry CODE >62:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+18 intentry CODE >63:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+19 intentry CODE >65:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+1E intentry CODE >67:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+20 intentry CODE >69:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+26 intentry CODE >71:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+29 intentry CODE >73:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+2E intentry CODE >76:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+72 text6 CODE >47:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+73 text6 CODE >48:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+78 text6 CODE >49:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+7A text6 CODE >50:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+7B text4 CODE >58:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+7B text4 CODE >61:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+7E text4 CODE >63:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+7F text4 CODE >65:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+81 text4 CODE >66:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+52 text3 CODE >55:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+52 text3 CODE >60:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+54 text3 CODE >61:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+55 text3 CODE >66:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+58 text3 CODE >67:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+5A text3 CODE >72:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+5D text3 CODE >73:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+5F text3 CODE >78:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+61 text3 CODE >79:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+62 text3 CODE >80:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+64 text3 CODE >86:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+66 text3 CODE >87:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+67 text3 CODE >94:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/pin_manager.c
+82 text2 CODE >68:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+82 text2 CODE >71:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+85 text2 CODE >72:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+68 text1 CODE >50:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+68 text1 CODE >53:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+6B text1 CODE >54:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+6E text1 CODE >55:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+71 text1 CODE >56:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\mcc_generated_files/mcc.c
+36 maintext CODE >6:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+36 maintext CODE >8:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+39 maintext CODE >10:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+3B maintext CODE >11:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+3C maintext CODE >13:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+3E maintext CODE >15:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+40 maintext CODE >18:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+43 maintext CODE >20:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+45 maintext CODE >22:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+47 maintext CODE >24:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+49 maintext CODE >27:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+4B maintext CODE >30:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+4D maintext CODE >32:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+4E maintext CODE >34:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+4F maintext CODE >37:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
+4F maintext CODE >40:C:\Users\dexte\Documents\GitHub\HC-05\HC-05.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -148,32 +181,35 @@ $dist/default/production\HC-05.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 1 0 ABS 0 - dist/default/production\HC-05.X.production.o
-__Hspace_0 800 0 ABS 0 - -
-__Hspace_1 0 0 ABS 0 - -
+__Hspace_0 86 0 ABS 0 - -
+__Hspace_1 71 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10010 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_WDT_Initialize FA0 0 CODE 0 text2 dist/default/production\HC-05.X.production.o
+__end_of_WDT_Initialize 10C 0 CODE 0 text2 dist/default/production\HC-05.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _LATA 10C 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _LATB 10D 0 ABS 0 - dist/default/production\HC-05.X.production.o
+_PEIE 5E 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _WPUA 20C 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _WPUB 20D 0 ABS 0 - dist/default/production\HC-05.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-_main FA0 0 CODE 0 maintext dist/default/production\HC-05.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+_main 6C 0 CODE 0 maintext dist/default/production\HC-05.X.production.o
+_send E4 0 CODE 0 text6 dist/default/production\HC-05.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\HC-05.X.production.o
-start 4 0 CODE 0 init C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
+start 60 0 CODE 0 init C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
 __size_of_main 0 0 ABS 0 - dist/default/production\HC-05.X.production.o
+__size_of_send 0 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _OPTION_REGbits 95 0 ABS 0 - dist/default/production\HC-05.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\HC-05.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
 wtemp0 7E 0 ABS 0 - dist/default/production\HC-05.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -181,14 +217,14 @@ _ANSELA 18C 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _ANSELB 18D 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _BORCON 116 0 ABS 0 - dist/default/production\HC-05.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 216F 0 ABS 0 - C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-___stacklo 2000 0 ABS 0 - C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-_PIN_MANAGER_Initialize FCE 0 CODE 0 text3 dist/default/production\HC-05.X.production.o
-start_initialization FFA 0 CODE 0 cinit dist/default/production\HC-05.X.production.o
+___stackhi 216F 0 ABS 0 - C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+___stacklo 2000 0 ABS 0 - C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+_PIN_MANAGER_Initialize A4 0 CODE 0 text3 dist/default/production\HC-05.X.production.o
+start_initialization 64 0 CODE 0 cinit dist/default/production\HC-05.X.production.o
 _OSCCON 99 0 ABS 0 - dist/default/production\HC-05.X.production.o
-__end_of_SYSTEM_Initialize FCE 0 CODE 0 text1 dist/default/production\HC-05.X.production.o
+__end_of_SYSTEM_Initialize E4 0 CODE 0 text1 dist/default/production\HC-05.X.production.o
 _WDTCON 97 0 ABS 0 - dist/default/production\HC-05.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
+___int_sp 0 0 STACK 2 stack C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -199,7 +235,7 @@ __Hbank6 0 0 BANK6 1 bank6 -
 __Hbank7 0 0 BANK7 1 bank7 -
 __Hbank8 0 0 BANK8 1 bank8 -
 __Hbank9 0 0 BANK9 1 bank9 -
-__Hcinit 1000 0 CODE 0 cinit -
+__Hcinit 6C 0 CODE 0 cinit -
 __size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\HC-05.X.production.o
 __Hsfr10 0 0 ABS 0 sfr10 -
 __Hsfr11 0 0 ABS 0 sfr11 -
@@ -260,7 +296,7 @@ __Lbank6 0 0 BANK6 1 bank6 -
 __Lbank7 0 0 BANK7 1 bank7 -
 __Lbank8 0 0 BANK8 1 bank8 -
 __Lbank9 0 0 BANK9 1 bank9 -
-__Lcinit FFA 0 CODE 0 cinit -
+__Lcinit 64 0 CODE 0 cinit -
 __Lsfr10 0 0 ABS 0 sfr10 -
 __Lsfr11 0 0 ABS 0 sfr11 -
 __Lsfr12 0 0 ABS 0 sfr12 -
@@ -288,7 +324,7 @@ _APFCON0 11D 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _APFCON1 11E 0 ABS 0 - dist/default/production\HC-05.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
-__Hinit 4 0 CODE 0 init -
+__Hinit 60 0 CODE 0 init -
 __Hsfr0 0 0 ABS 0 sfr0 -
 __Hsfr1 0 0 ABS 0 sfr1 -
 __Hsfr2 0 0 ABS 0 sfr2 -
@@ -302,7 +338,7 @@ __Hsfr9 0 0 ABS 0 sfr9 -
 __Htext 0 0 ABS 0 text -
 __Labs1 0 0 ABS 0 abs1 -
 __Lcode 0 0 ABS 0 code -
-__Linit 4 0 CODE 0 init -
+__Linit 60 0 CODE 0 init -
 __Lsfr0 0 0 ABS 0 sfr0 -
 __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
@@ -314,16 +350,24 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
+int$flags 7E 0 ABS 0 - dist/default/production\HC-05.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\HC-05.X.production.o
-__S0 800 0 ABS 0 - -
-__S1 0 0 ABS 0 - -
+_GIE 5F 0 ABS 0 - dist/default/production\HC-05.X.production.o
+__S0 86 0 ABS 0 - -
+__S1 71 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_SYSTEM_Initialize FBA 0 CODE 0 text1 dist/default/production\HC-05.X.production.o
-__Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\dexte\AppData\Local\Temp\xcAs1i4.o
-__end_of_PIN_MANAGER_Initialize FFA 0 CODE 0 text3 dist/default/production\HC-05.X.production.o
+_isr 8 0 CODE 0 intentry dist/default/production\HC-05.X.production.o
+send@data 70 0 COMMON 1 cstackCOMMON dist/default/production\HC-05.X.production.o
+_SYSTEM_Initialize D0 0 CODE 0 text1 dist/default/production\HC-05.X.production.o
+__end_of_isr 60 0 CODE 0 intentry dist/default/production\HC-05.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\dexte\AppData\Local\Temp\xcAs1e0.o
+_RCSTAbits 19D 0 ABS 0 - dist/default/production\HC-05.X.production.o
+_PIE1bits 91 0 ABS 0 - dist/default/production\HC-05.X.production.o
+__end_of_PIN_MANAGER_Initialize D0 0 CODE 0 text3 dist/default/production\HC-05.X.production.o
+_BAUDCON 19F 0 ABS 0 - dist/default/production\HC-05.X.production.o
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
 __Lbank12 0 0 BANK12 1 bank12 -
@@ -346,7 +390,7 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext FA0 0 CODE 0 maintext dist/default/production\HC-05.X.production.o
+__pmaintext 6C 0 CODE 0 maintext dist/default/production\HC-05.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
@@ -356,34 +400,45 @@ __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__Lend_init 4 0 CODE 0 end_init -
+_PIR1bits 11 0 ABS 0 - dist/default/production\HC-05.X.production.o
+__Lend_init 60 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-end_of_initialization FFA 0 CODE 0 cinit dist/default/production\HC-05.X.production.o
-__Hintentry 4 0 CODE 0 intentry -
+end_of_initialization 64 0 CODE 0 cinit dist/default/production\HC-05.X.production.o
+__Hintentry 60 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 FBA 0 CODE 0 text1 dist/default/production\HC-05.X.production.o
-__ptext2 F98 0 CODE 0 text2 dist/default/production\HC-05.X.production.o
-__ptext3 FCE 0 CODE 0 text3 dist/default/production\HC-05.X.production.o
-__ptext4 FAC 0 CODE 0 text4 dist/default/production\HC-05.X.production.o
+__ptext1 D0 0 CODE 0 text1 dist/default/production\HC-05.X.production.o
+__ptext2 104 0 CODE 0 text2 dist/default/production\HC-05.X.production.o
+__ptext3 A4 0 CODE 0 text3 dist/default/production\HC-05.X.production.o
+__ptext4 F6 0 CODE 0 text4 dist/default/production\HC-05.X.production.o
+__ptext6 E4 0 CODE 0 text6 dist/default/production\HC-05.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\HC-05.X.production.o
+__end_of__initialization 64 0 CODE 0 cinit dist/default/production\HC-05.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
-__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\HC-05.X.production.o
-__Hend_init 8 0 CODE 0 end_init -
-__end_of_main FAC 0 CODE 0 maintext dist/default/production\HC-05.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\HC-05.X.production.o
+_TXSTAbits 19E 0 ABS 0 - dist/default/production\HC-05.X.production.o
+__Hend_init 64 0 CODE 0 end_init -
+__end_of_main A4 0 CODE 0 maintext dist/default/production\HC-05.X.production.o
+__end_of_send F6 0 CODE 0 text6 dist/default/production\HC-05.X.production.o
+_RCREG 199 0 ABS 0 - dist/default/production\HC-05.X.production.o
+_RCSTA 19D 0 ABS 0 - dist/default/production\HC-05.X.production.o
+_SPBRG 19B 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _TRISA 8C 0 ABS 0 - dist/default/production\HC-05.X.production.o
 _TRISB 8D 0 ABS 0 - dist/default/production\HC-05.X.production.o
+_TXREG 19A 0 ABS 0 - dist/default/production\HC-05.X.production.o
+_TXSTA 19E 0 ABS 0 - dist/default/production\HC-05.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\HC-05.X.production.o
-_WDT_Initialize F98 0 CODE 0 text2 dist/default/production\HC-05.X.production.o
-__end_of_OSCILLATOR_Initialize FBA 0 CODE 0 text4 dist/default/production\HC-05.X.production.o
-__initialization FFA 0 CODE 0 cinit dist/default/production\HC-05.X.production.o
-_OSCILLATOR_Initialize FAC 0 CODE 0 text4 dist/default/production\HC-05.X.production.o
+_WDT_Initialize 104 0 CODE 0 text2 dist/default/production\HC-05.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\HC-05.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\HC-05.X.production.o
+__end_of_OSCILLATOR_Initialize 104 0 CODE 0 text4 dist/default/production\HC-05.X.production.o
+__initialization 64 0 CODE 0 cinit dist/default/production\HC-05.X.production.o
+_OSCILLATOR_Initialize F6 0 CODE 0 text4 dist/default/production\HC-05.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -409,13 +464,9 @@ _OSCILLATOR_Initialize FAC 0 CODE 0 text4 dist/default/production\HC-05.X.produc
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 7FD FFA 3 2
-text1 0 7DD FBA A 2
-text2 0 7CC F98 4 2
-text3 0 7E7 FCE 16 2
-text4 0 7D6 FAC 7 2
-maintext 0 7D0 FA0 6 2
-reset_vec 0 0 0 4 2
+cstackCOMMON 1 70 70 1 1
+intentry 0 4 8 82 2
+reset_vec 0 0 0 2 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

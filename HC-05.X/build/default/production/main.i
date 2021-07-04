@@ -4388,14 +4388,76 @@ void WDT_Initialize(void);
 # 2 "main.c" 2
 
 
+void send(unsigned char data);
 
 void main(void)
 {
     SYSTEM_Initialize();
 
+    ANSELA = 0x0;
+    ANSELB = 0x0;
+
+    TRISA = 0x0;
+
+    TRISB = 0x02;
+
+
+    TXSTA = 0x02;
+
+    RCSTA = 0x90;
+
+    BAUDCON = 0x08;
+
+    SPBRG = 51;
+
+
+    PIR1bits.RCIF = 0;
+
+
+    PIE1bits.RCIE = 1;
+
+    PEIE = 1;
+
+    GIE = 1;
+
 
     while (1)
     {
 
+    }
+}
+
+
+
+
+
+void send(unsigned char data){
+    while(!TXSTAbits.TRMT);
+    TXREG = data;
+}
+
+
+
+
+void __attribute__((picinterrupt(("")))) isr(void){
+    if(PIR1bits.RCIF){
+
+        PIR1bits.RCIF = 0;
+
+        if((RCSTAbits.OERR) || (RCSTAbits.FERR)){
+            RCSTA = 0;
+            RCSTA = 0x90;
+        }else{
+
+            if(RCREG == 0){
+
+                LATA = 0x0;
+            }
+            if(RCREG == 1){
+
+                LATA = 0x02;
+            }
+            send(RCREG);
+        }
     }
 }

@@ -3,6 +3,91 @@ Version 4.0 HI-TECH Software Intermediate Code
 "69 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 69: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"2862 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 2862: extern volatile unsigned char ANSELA __attribute__((address(0x18C)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
+"2914
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 2914: extern volatile unsigned char ANSELB __attribute__((address(0x18D)));
+[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
+"1153
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 1153: extern volatile unsigned char TRISA __attribute__((address(0x08C)));
+[v _TRISA `Vuc ~T0 @X0 0 e@140 ]
+"1215
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 1215: extern volatile unsigned char TRISB __attribute__((address(0x08D)));
+[v _TRISB `Vuc ~T0 @X0 0 e@141 ]
+"3374
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3374: extern volatile unsigned char TXSTA __attribute__((address(0x19E)));
+[v _TXSTA `Vuc ~T0 @X0 0 e@414 ]
+"3312
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3312: extern volatile unsigned char RCSTA __attribute__((address(0x19D)));
+[v _RCSTA `Vuc ~T0 @X0 0 e@413 ]
+"3436
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3436: extern volatile unsigned char BAUDCON __attribute__((address(0x19F)));
+[v _BAUDCON `Vuc ~T0 @X0 0 e@415 ]
+"3225
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3225: extern volatile unsigned char SPBRG __attribute__((address(0x19B)));
+[v _SPBRG `Vuc ~T0 @X0 0 e@411 ]
+"560
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 560:     struct {
+[s S38 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S38 . TMR1IF TMR2IF CCP1IF SSP1IF TXIF RCIF ADIF TMR1GIF ]
+"559
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 559: typedef union {
+[u S37 `S38 1 ]
+[n S37 . . ]
+"571
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 571: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
+[v _PIR1bits `VS37 ~T0 @X0 0 e@17 ]
+"1283
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 1283:     struct {
+[s S75 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S75 . TMR1IE TMR2IE CCP1IE SSP1IE TXIE RCIE ADIE TMR1GIE ]
+"1282
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 1282: typedef union {
+[u S74 `S75 1 ]
+[n S74 . . ]
+"1294
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 1294: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x091)));
+[v _PIE1bits `VS74 ~T0 @X0 0 e@145 ]
+"7610
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 7610: extern volatile __bit PEIE __attribute__((address(0x5E)));
+[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+"7277
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 7277: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"3380
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3380:     struct {
+[s S182 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S182 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"3379
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3379: typedef union {
+[u S181 `S182 1 ]
+[n S181 . . ]
+"3391
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3391: extern volatile TXSTAbits_t TXSTAbits __attribute__((address(0x19E)));
+[v _TXSTAbits `VS181 ~T0 @X0 0 e@414 ]
+"3193
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3193: extern volatile unsigned char TXREG __attribute__((address(0x19A)));
+[v _TXREG `Vuc ~T0 @X0 0 e@410 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"3318
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3318:     struct {
+[s S180 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S180 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"3317
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3317: typedef union {
+[u S179 `S180 1 ]
+[n S179 . . ]
+"3329
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3329: extern volatile RCSTAbits_t RCSTAbits __attribute__((address(0x19D)));
+[v _RCSTAbits `VS179 ~T0 @X0 0 e@413 ]
+"3173
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 3173: extern volatile unsigned char RCREG __attribute__((address(0x199)));
+[v _RCREG `Vuc ~T0 @X0 0 e@409 ]
+"2040
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 2040: extern volatile unsigned char LATA __attribute__((address(0x10C)));
+[v _LATA `Vuc ~T0 @X0 0 e@268 ]
 "55 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -478,30 +563,154 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f1827.h: 6749: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"5 main.c
-[; ;main.c: 5: void main(void)
+"6 main.c
+[; ;main.c: 6: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"6
-[; ;main.c: 6: {
+"7
+[; ;main.c: 7: {
 {
 [e :U _main ]
 [f ]
-"7
-[; ;main.c: 7:     SYSTEM_Initialize();
+"8
+[; ;main.c: 8:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
 "10
-[; ;main.c: 10:     while (1)
-[e :U 356 ]
+[; ;main.c: 10:     ANSELA = 0x0;
+[e = _ANSELA -> -> 0 `i `uc ]
 "11
-[; ;main.c: 11:     {
-{
+[; ;main.c: 11:     ANSELB = 0x0;
+[e = _ANSELB -> -> 0 `i `uc ]
 "13
-[; ;main.c: 13:     }
+[; ;main.c: 13:     TRISA = 0x0;
+[e = _TRISA -> -> 0 `i `uc ]
+"15
+[; ;main.c: 15:     TRISB = 0x02;
+[e = _TRISB -> -> 2 `i `uc ]
+"18
+[; ;main.c: 18:     TXSTA = 0x02;
+[e = _TXSTA -> -> 2 `i `uc ]
+"20
+[; ;main.c: 20:     RCSTA = 0x90;
+[e = _RCSTA -> -> 144 `i `uc ]
+"22
+[; ;main.c: 22:     BAUDCON = 0x08;
+[e = _BAUDCON -> -> 8 `i `uc ]
+"24
+[; ;main.c: 24:     SPBRG = 51;
+[e = _SPBRG -> -> 51 `i `uc ]
+"27
+[; ;main.c: 27:     PIR1bits.RCIF = 0;
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"30
+[; ;main.c: 30:     PIE1bits.RCIE = 1;
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+"32
+[; ;main.c: 32:     PEIE = 1;
+[e = _PEIE -> -> 1 `i `b ]
+"34
+[; ;main.c: 34:     GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
+"37
+[; ;main.c: 37:     while (1)
+[e :U 356 ]
+"38
+[; ;main.c: 38:     {
+{
+"40
+[; ;main.c: 40:     }
 }
 [e :U 355 ]
 [e $U 356  ]
 [e :U 357 ]
-"14
-[; ;main.c: 14: }
+"41
+[; ;main.c: 41: }
 [e :UE 354 ]
+}
+"47
+[; ;main.c: 47: void send(unsigned char data){
+[v _send `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _send ]
+[v _data `uc ~T0 @X0 1 r1 ]
+[f ]
+"48
+[; ;main.c: 48:     while(!TXSTAbits.TRMT);
+[e $U 359  ]
+[e :U 360 ]
+[e :U 359 ]
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 360  ]
+[e :U 361 ]
+"49
+[; ;main.c: 49:     TXREG = data;
+[e = _TXREG _data ]
+"50
+[; ;main.c: 50: }
+[e :UE 358 ]
+}
+[v $root$_isr `(v ~T0 @X0 0 e ]
+"55
+[; ;main.c: 55: void __attribute__((picinterrupt(("")))) isr(void){
+[v _isr `(v ~T1 @X0 1 ef ]
+{
+[e :U _isr ]
+[f ]
+"56
+[; ;main.c: 56:     if(PIR1bits.RCIF){
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 363  ]
+{
+"58
+[; ;main.c: 58:         PIR1bits.RCIF = 0;
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"60
+[; ;main.c: 60:         if((RCSTAbits.OERR) || (RCSTAbits.FERR)){
+[e $ ! || != -> . . _RCSTAbits 0 1 `i -> 0 `i != -> . . _RCSTAbits 0 2 `i -> 0 `i 364  ]
+{
+"61
+[; ;main.c: 61:             RCSTA = 0;
+[e = _RCSTA -> -> 0 `i `uc ]
+"62
+[; ;main.c: 62:             RCSTA = 0x90;
+[e = _RCSTA -> -> 144 `i `uc ]
+"63
+[; ;main.c: 63:         }else{
+}
+[e $U 365  ]
+[e :U 364 ]
+{
+"65
+[; ;main.c: 65:             if(RCREG == 0){
+[e $ ! == -> _RCREG `i -> 0 `i 366  ]
+{
+"67
+[; ;main.c: 67:                 LATA = 0x0;
+[e = _LATA -> -> 0 `i `uc ]
+"68
+[; ;main.c: 68:             }
+}
+[e :U 366 ]
+"69
+[; ;main.c: 69:             if(RCREG == 1){
+[e $ ! == -> _RCREG `i -> 1 `i 367  ]
+{
+"71
+[; ;main.c: 71:                 LATA = 0x02;
+[e = _LATA -> -> 2 `i `uc ]
+"72
+[; ;main.c: 72:             }
+}
+[e :U 367 ]
+"73
+[; ;main.c: 73:             send(RCREG);
+[e ( _send (1 _RCREG ]
+"74
+[; ;main.c: 74:         }
+}
+[e :U 365 ]
+"75
+[; ;main.c: 75:     }
+}
+[e :U 363 ]
+"76
+[; ;main.c: 76: }
+[e :UE 362 ]
 }
